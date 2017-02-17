@@ -76,10 +76,10 @@ def drawchar_pix(x,y,char):
     tmppix = charpix[char]
     for i in range(0,9):
         if tmppix[i]==1:
-            print 'rect:',basex+char_offset[i][0],basey++char_offset[i][1]
+            print 'rect:',basex+char_offset[i][0],basey+char_offset[i][1]
             ax.add_patch(
             patches.Rectangle(
-                (basex+char_offset[i][0], basey++char_offset[i][1]),   # (x,y)
+                (basex+char_offset[i][0], basey+char_offset[i][1]),   # (x,y)
                 1,          # width
                 1,          # height
                 color='red'
